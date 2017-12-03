@@ -13,7 +13,7 @@ Usage
 Test `jq` command:
 
 ```
-$ docker run --rm --name jq realguess/jq:v1.4 \
+$ docker run --rm --name jq realguess/jq:1.4 \
   sh -c 'echo "{\"foo\":\"bar\"}" | jq .'
 {
   "foo": "bar"
@@ -23,7 +23,7 @@ $ docker run --rm --name jq realguess/jq:v1.4 \
 Start an interactive container with jq:
 
 ```
-$ docker run -it --rm --name jq realguess/jq:v1.4
+$ docker run -it --rm --name jq realguess/jq:1.4
 ```
 
 This will drop into `/bin/sh`, then `jq` command can be run:
