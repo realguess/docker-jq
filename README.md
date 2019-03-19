@@ -22,7 +22,7 @@ $ echo "{\"foo\":\"bar\"} | docker run --rm -i realguess/jq .
 Start an interactive container with jq:
 
 ```
-$ docker run -it --rm --name jq realguess/jq:1.4
+$ docker run -it --rm --entrypoint sh realguess/jq:1.4
 ```
 
 This will drop into `/bin/sh`, then `jq` command can be run:
