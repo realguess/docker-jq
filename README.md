@@ -13,8 +13,7 @@ Usage
 Test `jq` command:
 
 ```
-$ docker run --rm --name jq realguess/jq:1.4 \
-  sh -c 'echo "{\"foo\":\"bar\"}" | jq .'
+$ echo "{\"foo\":\"bar\"} | docker run --rm -i realguess/jq .
 {
   "foo": "bar"
 }
